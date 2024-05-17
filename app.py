@@ -11,6 +11,12 @@ Purpose
 To perform basic and useful NLP task with Streamlit,Spacy,Textblob and Gensim/Sumy
 
 """
+# Compatibility fix for Python 3.10+
+import collections
+import collections.abc
+collections.Mapping = collections.abc.Mapping
+collections.Iterable = collections.abc.Iterable
+
 # Core Pkgs
 import streamlit as st
 import os
@@ -130,3 +136,5 @@ def main():
 
 if __name__ == '__main__':
 	main()
+	
+    
