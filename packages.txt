@@ -4,4 +4,3 @@ libxslt-dev
 gfortran
 gcc
 python3-dev
-cython
